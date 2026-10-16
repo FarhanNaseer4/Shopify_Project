@@ -1,0 +1,7 @@
+2026-10-16 12:05:32,321 WARNING SKU 5920: WAWI handle 'lochblech-tafelware-quadratlochung-gerade-qg-8-12' differs; using Shopify reference 'lochblech-tafelware-quadratlochung-gerade-qg-10-12'.
+2026-10-16 12:05:32,321 WARNING SKU 941: WAWI handle 'lochblech-tafelware-rundlochung-gerade-rg-10-21' differs; using Shopify reference 'lochblech-tafelware-rundlochung-gerade-rg-10-20-78'.
+2026-10-16 12:05:32,321 WARNING SKU 806: WAWI handle 'lochblech-tafelware-rundlochung-gerade-rg-10-26' differs; using Shopify reference 'lochblech-tafelware-rundlochung-gerade-rg-10-25-98'.
+2026-10-16 12:05:32,321 WARNING SKU 5061: quantity prices increase at a higher tier; source values retained for review.
+2026-10-16 12:05:32,321 WARNING SKU 1162: quantity prices increase at a higher tier; source values retained for review.
+2026-10-16 12:05:32,321 WARNING SKU 717: quantity prices increase at a higher tier; source values retained for review.
+2026-10-16 12:05:32,322 INFO group=Tafeln category=Lochbleche input=input\WAMI_Tafeln\261012-Tafeln-Lochbleche-Marc.xlsx template=input\Templates\Vorlagen Tafel.xlsx rows=581 products=29 warnings=6 output=None price_json=None pending_images=0

@@ -1,0 +1,4 @@
+2026-10-16 12:08:41,121 WARNING SKU 5061: quantity prices increase at a higher tier; source values retained for review.
+2026-10-16 12:08:41,121 WARNING SKU 1162: quantity prices increase at a higher tier; source values retained for review.
+2026-10-16 12:08:41,121 WARNING SKU 717: quantity prices increase at a higher tier; source values retained for review.
+2026-10-16 12:08:41,121 INFO group=Tafeln category=Wellengitter input=D:\upwork_details\FarhanNaseer\Petra_Wesenberg\input\WAMI_Tafeln\261012-Tafeln-Wellengitter-Marc.xlsx template=D:\upwork_details\FarhanNaseer\Petra_Wesenberg\input\Templates\Vorlagen Tafel.xlsx rows=36 products=5 warnings=3 output=D:\upwork_details\FarhanNaseer\Petra_Wesenberg\output\client_samples_20261016_120833_054554\shopify_Tafeln_Wellengitter_20261016_120839_816041.xlsx price_json=D:\upwork_details\FarhanNaseer\Petra_Wesenberg\output\client_samples_20261016_120833_054554\tafelware_mr_json_values.json pending_images=0

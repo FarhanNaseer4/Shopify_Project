@@ -1,0 +1,5 @@
+2026-10-16 12:23:41,277 WARNING SKU 14063: WAWI handle 'streckmetall-tafelware-62x20x7-5' differs; using Shopify reference 'streckmetall-tafelware-62x23x3'.
+2026-10-16 12:23:41,277 WARNING SKU 5061: quantity prices increase at a higher tier; source values retained for review.
+2026-10-16 12:23:41,277 WARNING SKU 1162: quantity prices increase at a higher tier; source values retained for review.
+2026-10-16 12:23:41,277 WARNING SKU 717: quantity prices increase at a higher tier; source values retained for review.
+2026-10-16 12:23:41,278 INFO group=Tafeln category=Streckmetall input=D:\upwork_details\FarhanNaseer\Petra_Wesenberg\input\WAMI_Tafeln\261012-Tafeln-Steckgitter-Marc.xlsx template=D:\upwork_details\FarhanNaseer\Petra_Wesenberg\input\Templates\Vorlagen Tafel.xlsx rows=114 products=13 warnings=4 output=D:\upwork_details\FarhanNaseer\Petra_Wesenberg\output\client_samples_20261016_122336_264891\shopify_Tafeln_Streckmetall_20261016_122339_778561.xlsx price_json=D:\upwork_details\FarhanNaseer\Petra_Wesenberg\output\client_samples_20261016_122336_264891\tafelware_mr_json_values.json pending_images=0

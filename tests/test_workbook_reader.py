@@ -13,9 +13,9 @@ class WorkbookReaderTests(unittest.TestCase):
         headers = extract_headers(template, "Lochbleche")
         self.assertEqual(headers[0], "Handle")
         self.assertTrue(headers[-1].startswith("Variant Metafield:"))
-        self.assertEqual(headers[headers.index("Image Src") + 1], "Image Command")
+        self.assertNotIn("Image Src", headers)
         self.assertNotIn("Inventory Quantity", headers)
-        self.assertEqual(len(headers), 27)
+        self.assertEqual(len(headers), 23)
 
 
 if __name__ == "__main__":

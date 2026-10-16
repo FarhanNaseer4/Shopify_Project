@@ -1,0 +1,4 @@
+2026-10-16 12:05:36,559 WARNING SKU 5061: quantity prices increase at a higher tier; source values retained for review.
+2026-10-16 12:05:36,559 WARNING SKU 1162: quantity prices increase at a higher tier; source values retained for review.
+2026-10-16 12:05:36,559 WARNING SKU 717: quantity prices increase at a higher tier; source values retained for review.
+2026-10-16 12:05:36,559 INFO group=Tafeln category=Wellengitter input=input\WAMI_Tafeln\261012-Tafeln-Wellengitter-Marc.xlsx template=input\Templates\Vorlagen Tafel.xlsx rows=36 products=5 warnings=3 output=None price_json=None pending_images=0

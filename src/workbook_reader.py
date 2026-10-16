@@ -14,14 +14,21 @@ def normalized(value: str) -> str:
 
 
 def find_template(group: str, templates_dir: Path) -> Path:
-    matches = [p for p in templates_dir.glob("*.xlsx") if normalized(group) in normalized(p.name)]
+    token = "tafel" if group == "Tafeln" else normalized(group)
+    matches = [p for p in templates_dir.glob("*.xlsx") if token in normalized(p.name) and not p.name.startswith("~$")]
     if len(matches) != 1:
         raise ValueError(f"Expected exactly one template containing '{group}' in {templates_dir}; found {len(matches)}.")
     return matches[0]
 
 
 def resolve_sheet(workbook: Any, wanted: str) -> str:
-    matches = [name for name in workbook.sheetnames if normalized(name) == normalized(wanted)]
+    aliases = {"Lochbleche": "Lochblech Tafel", "Streckmetall": "Streckmetall Tafel",
+               "Lochblech": "Lochblech Zuschnitt", "Präge": "Prägeblech Zuschnitt",
+               "Glattblech": "Glattblech Zuschnitt", "Duett": "Riffelblech Zuschnitt",
+               "PVC": "PVC Zuschnitt"}
+    candidates = {normalized(wanted), normalized(aliases.get(wanted, wanted)),
+                  normalized(wanted + " Tafel"), normalized(wanted + " Zuschnitt")}
+    matches = [name for name in workbook.sheetnames if normalized(name) in candidates]
     if len(matches) != 1:
         raise ValueError(f"Worksheet '{wanted}' was not found uniquely. Available: {', '.join(workbook.sheetnames)}")
     return matches[0]
@@ -39,9 +46,13 @@ def extract_headers(template_file: Path, sheet: str) -> list[str]:
     headers = [header for header in headers if header != "Inventory Quantity"]
     # The agency requires existing Shopify images to be replaced by images from
     # WAMI. Older supplied templates predate the Matrixify Image Command column.
+    if "Image Src" not in headers:
+        return headers
+    image_index = headers.index("Image Src")
+    if "Image Position" not in headers:
+        headers.insert(image_index + 1, "Image Position")
     if "Image Command" not in headers:
-        image_index = headers.index("Image Src")
-        headers.insert(image_index + 1, "Image Command")
+        headers.insert(headers.index("Image Position") + 1, "Image Command")
     return headers
 
 
@@ -61,6 +72,13 @@ def read_records(input_file: Path, sheet: str) -> list[dict[str, Any]]:
     for values in iterator:
         values = values[: len(headers)]
         if not any(value not in (None, "") for value in values):
+            continue
+        # Source exports fill Handle lookup formulas down to row 1000.
+        # Ignore formula-only padding, but retain actual rows with missing SKUs
+        # so the converter can reject those rather than silently dropping them.
+        if "Artikel-Nr" in headers and not any(
+            value not in (None, "") for name, value in zip(headers, values) if name != "Handle"
+        ):
             continue
         records.append(dict(zip(headers, values)))
     wb.close()

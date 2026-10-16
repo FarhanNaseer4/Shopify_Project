@@ -1,0 +1,4 @@
+2026-10-16 12:05:45,861 WARNING SKU 15757: WAWI handle '#N/A' differs; using Shopify reference 'kunststoff-lochplatte-zuschnitt-qg-20-25-aus-pvc'.
+2026-10-16 12:05:45,861 WARNING SKU 15763: WAWI handle '#N/A' differs; using Shopify reference 'kunststoff-lochplatte-zuschnitt-rv-6-14-aus-pvc'.
+2026-10-16 12:05:45,861 WARNING SKU 15766: WAWI handle '#N/A' differs; using Shopify reference 'kunststoff-lochplatte-zuschnitt-rv-20-28-aus-pvc'.
+2026-10-16 12:05:45,861 INFO group=Zuschnitte category=PVC input=input\WAMI_Zuschnitte\240723-Zuschnitte-PVC_Marissa.xlsx template=input\Templates\Vorlagen Zuschnitte.xlsx rows=12 products=4 warnings=3 output=None price_json=None pending_images=0

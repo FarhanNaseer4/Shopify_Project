@@ -1,0 +1,7 @@
+2026-10-16 12:23:38,762 WARNING SKU 5920: WAWI handle 'lochblech-tafelware-quadratlochung-gerade-qg-8-12' differs; using Shopify reference 'lochblech-tafelware-quadratlochung-gerade-qg-10-12'.
+2026-10-16 12:23:38,762 WARNING SKU 941: WAWI handle 'lochblech-tafelware-rundlochung-gerade-rg-10-21' differs; using Shopify reference 'lochblech-tafelware-rundlochung-gerade-rg-10-20-78'.
+2026-10-16 12:23:38,762 WARNING SKU 806: WAWI handle 'lochblech-tafelware-rundlochung-gerade-rg-10-26' differs; using Shopify reference 'lochblech-tafelware-rundlochung-gerade-rg-10-25-98'.
+2026-10-16 12:23:38,762 WARNING SKU 5061: quantity prices increase at a higher tier; source values retained for review.
+2026-10-16 12:23:38,762 WARNING SKU 1162: quantity prices increase at a higher tier; source values retained for review.
+2026-10-16 12:23:38,763 WARNING SKU 717: quantity prices increase at a higher tier; source values retained for review.
+2026-10-16 12:23:38,763 INFO group=Tafeln category=Lochbleche input=D:\upwork_details\FarhanNaseer\Petra_Wesenberg\input\WAMI_Tafeln\261012-Tafeln-Lochbleche-Marc.xlsx template=D:\upwork_details\FarhanNaseer\Petra_Wesenberg\input\Templates\Vorlagen Tafel.xlsx rows=581 products=29 warnings=6 output=D:\upwork_details\FarhanNaseer\Petra_Wesenberg\output\client_samples_20261016_122336_264891\shopify_Tafeln_Lochbleche_20261016_122337_159829.xlsx price_json=D:\upwork_details\FarhanNaseer\Petra_Wesenberg\output\client_samples_20261016_122336_264891\tafelware_mr_json_values.json pending_images=0

@@ -27,7 +27,11 @@ def main() -> int:
     except (ValueError, OSError) as exc:
         print(f"Conversion failed: {exc}")
         return 1
-    print(f"Processing complete.\nGroup: {result.group}\nCategory: {result.category}\nInput rows: {result.input_rows}\nProducts: {result.products}\nVariants: {result.variants}\nWarnings: {len(result.warnings)}\nOutput: {result.output_file or 'dry run'}\nLog: {result.log_file}")
+    print(f"Processing complete.\nGroup: {result.group}\nCategory: {result.category}\nInput rows: {result.input_rows}\nProducts: {result.products}\nVariants: {result.variants}\nWarnings: {len(result.warnings)}\nExcel output: {result.output_file or 'dry run'}\nConsolidated price JSON: {result.price_json_file or 'dry run'}\nPending images: {result.pending_images}\nLog: {result.log_file}")
+    if result.new_products_file:
+        print(f"New products/variants: {result.new_products_file}")
+    for warning in result.warnings:
+        print(f"Warning: {warning}")
     return 0
 
 

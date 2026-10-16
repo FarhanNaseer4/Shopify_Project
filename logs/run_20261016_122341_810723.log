@@ -1,0 +1,4 @@
+2026-10-16 12:23:43,130 WARNING SKU 5061: quantity prices increase at a higher tier; source values retained for review.
+2026-10-16 12:23:43,130 WARNING SKU 1162: quantity prices increase at a higher tier; source values retained for review.
+2026-10-16 12:23:43,130 WARNING SKU 717: quantity prices increase at a higher tier; source values retained for review.
+2026-10-16 12:23:43,130 INFO group=Tafeln category=Schweiﬂgitter input=D:\upwork_details\FarhanNaseer\Petra_Wesenberg\input\WAMI_Tafeln\261012-Tafeln-Schweiﬂgitter-Marc.xlsx template=D:\upwork_details\FarhanNaseer\Petra_Wesenberg\input\Templates\Vorlagen Tafel.xlsx rows=45 products=7 warnings=3 output=D:\upwork_details\FarhanNaseer\Petra_Wesenberg\output\client_samples_20261016_122336_264891\shopify_Tafeln_Schweiﬂgitter_20261016_122341_810723.xlsx price_json=D:\upwork_details\FarhanNaseer\Petra_Wesenberg\output\client_samples_20261016_122336_264891\tafelware_mr_json_values.json pending_images=0
